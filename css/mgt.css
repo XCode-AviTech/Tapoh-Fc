@@ -1,0 +1,152 @@
+
+/* Management Section */
+.management {
+    width: 100%;
+    padding: 40px;
+    text-align: center;
+}
+
+.management h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+/* Management Container (Slideshow Left, Management Right) */
+.management-container {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+    align-content: space-around;
+}
+
+/* Slideshow - Left Side */
+.slideshow-container {
+    width: 28%;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 4px 6px 12px rgba(17, 17, 17, 0.836);
+}
+
+/* Each Slide */
+.slide {
+    display: none;
+    animation: fadeEffect 1s ease-in-out;
+}
+
+/* Show first slide by default */
+.slide:first-child {
+    display: block;
+}
+
+/* Slide Images */
+.slide img {
+    width: 100%;
+    height: 310px;
+    display: block;
+}
+
+/* Text Overlay */
+.content {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+
+    h4{
+        font-size: 25px;
+        padding: 0;
+        margin-top: 0;
+    }
+}
+
+/* Smooth Fading Effect */
+@keyframes fadeEffect {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
+
+/* Right Section - Management Details */
+
+
+/* Management Sections */
+.management-section {
+    width: 70%;
+    padding-left: 20px;
+
+    h2{
+        margin-bottom: 10px;
+        margin-top: 20px;
+        font-size: 20px;
+    }
+}
+
+/* Management Grid */
+.management-grid {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Individual Cards */
+.management-card {
+    cursor: pointer;
+    width: 28%;
+    display: inline-flex;
+    background: white;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 10px;
+    padding: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.management-card:hover {
+    transform: scale(1.05);
+}
+
+/* Card Images */
+.management-card img {
+    width: 40%;
+    object-fit: cover;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .management-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .slideshow-container {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .ryt {
+        width: 100%;
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .management-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .management-card {
+        width: 90%;
+    }
+}

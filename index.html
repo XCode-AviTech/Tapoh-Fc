@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Tapoh Fc - The Pythons (Layout Testing)">
+  <meta property="og:description"
+    content="This website is still under development with all its content as static & under review!! This product is for testing purposes only!!">
+  <meta property="og:image" content="https://xcode-avitech.github.io/Tapoh-Fc/assets/images/logo.png">
+  <meta property="og:url" content="https://xcode-avitech.github.io/Tapoh-Fc/">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/png" href="./assets/images/logo.png"> 
+
+  <title>Tapoh FC - Official Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/nav.css">
+  <link rel="stylesheet" href="./css/media.css">
+</head>
+<body>
+
+  <!-- Error Box -->
+  <div class="page-error">
+    <div class="error">
+      <i class="bi bi-exclamation-triangle-fill"></i>
+      <h4>Screen Size Not Supported</h4>
+      <p>Your device screen width is too small ( ... < 285px).<br>
+        Please rotate your device or use a larger screen for the better experience.</p>
+    </div>
+  </div>
+
+  <div class="page">
+
+    <div id="preloader">
+      <div class="preloader-content">
+        <img src="./assets/images/logo.png" alt="">
+        <div class="loader-circle-11">
+          <div class="arc"></div>
+          <div class="arc"></div>
+          <div class="arc"></div>
+        </div>
+        <p>
+          <i class="bi bi-exclamation-triangle-fill text-danger"></i>
+          <span>
+            This website is still under development with all its content 
+            static and under review. This product is under testing!!
+          </span>
+        </p>
+      </div>
+    </div>
+
+    <header class="d-flex align-items-center justify-content-between shadow-sm">
+    <div class="logo d-flex">
+      <img src="./assets/images/logo.png" alt="logo">
+      <div class="title">
+        <h2>Tapoh FC</h2>
+        <hr>
+        <div class="social icon-pack">
+          <a href="#"><i class="bi bi-facebook" title="FaceBook"></i></a>
+          <a href="#"><i class="bi bi-twitter-x" title="X"></i></a>
+          <a href="#"><i class="bi bi-instagram" title="Instgram"></i></a>
+          <a href="#"><i class="bi bi-youtube" title="YouTube"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="nav">
+      <nav>
+        <div class="nav-toggle">
+          <button onclick="toggleNav()" id="show" title="Menu"><i class="bi bi-list open"></i></button>
+          <button onclick="closeNav()" id="close" title="Close Menu"><i class="bi bi-x close"></i></button>
+        </div>
+        <ul class="navigation" id="nav">
+          <li><a href="./index.html" class="active">Home</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./team.html">Our Team</a></li>
+          <li><a href="./news.html">Team News</a></li>
+          <li><a href="./gallery.html">Gallery</a></li>
+          <li><a href="./reviews.html">Team Reviews</a></li>
+          <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <div class="hero-text">
+          <span class="tagline">Tapoh FC</span>
+          <h1>"UNITED IN PASSION,<br>DRIVEN BY VICTORY"</h1>
+        </div>
+
+        <div class="slant">
+          <div class="swiper slide-swiper">
+            <div class="swiper-wrapper" id="quotes-container">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="today">
+      <h2>Latest from <span class="text-danger">Tapoh FC</span></h2>
+      <div class="latest card">
+        <article class="card latest-card">
+          <img src="./assets/news/od-grad.jpg" alt="">
+          <div class="card-body">
+            <h5>Tapoh captain graduates</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Numquam fugiat iste asperiores doloribus a. Molestias quae, 
+              aperiam aspernatur sapiente cumque autem ullam facilis ad 
+              nihil nemo excepturi voluptatibus? Repellendus, facere.
+            </p>
+            <a href="#"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+          </div>
+        </article>
+        <article class="card latest-card">
+          <img src="./assets/news/presido.jpg" alt="">
+          <div class="card-body">
+            <h5>CEO, President and defender at KCCA</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Numquam fugiat iste asperiores doloribus a. Molestias quae, 
+              aperiam aspernatur sapiente cumque autem ullam facilis ad 
+              nihil nemo excepturi voluptatibus? Repellendus, facere.
+            </p>
+            <a href="#"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+          </div>
+        </article>
+        <article class="card latest-card">
+          <img src="./assets/news/fan2.jpg" alt="">
+          <div class="card-body">
+            <h5>Stars in attendance during Busoga Vs Tapoh</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Numquam fugiat iste asperiores doloribus a. Molestias quae, 
+              aperiam aspernatur sapiente cumque autem ullam facilis ad 
+              nihil nemo excepturi voluptatibus? Repellendus, facere.
+            </p>
+            <a href="#"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+          </div>
+        </article>
+        <article class="more-card">
+          <div class="card-body">
+            <a href="./news.html"><span>View All</span><i class="bi bi-arrow-right"></i></a>
+          </div>
+        </article>
+      </div>
+    </section>
+<!--
+    <section class="youtube-section videos">
+      <h2>Latest <span>Videos</span></h2>
+      <div id="video-grid"></div>
+
+      <div id="no-videos">
+        <p>No videos uploaded yet. Stay tuned!</p>
+        <img src="https://via.placeholder.com/400x200?text=No+Videos+Available" alt="No videos available">
+      </div>
+
+      <div class="video-buttons">
+        <a href="https://www.youtube.com/channel/YOUR_CHANNEL_ID" target="_blank" class="btn" rel="noopener noreferrer">More Videos</a>
+        <a href="https://www.youtube.com/channel/YOUR_CHANNEL_ID?sub_confirmation=1" rel="noopener noreferrer" target="_blank" class="btn subscribe">Subscribe</a>
+        <a href="https://www.youtube.com/share?u=https://www.youtube.com/channel/YOUR_CHANNEL_ID" rel="noopener noreferrer" target="_blank" class="btn share">Share Channel</a>
+      </div>
+    </section>
+---->
+    <section class="match-preview">
+      <div class="overlay">
+        <div class="swiper slide-swiper">
+          <div class="swiper-wrapper">
+
+            <!------Next game------>
+            <div class="swiper-slide">
+              <div class="due">
+                <div class="due-info">
+                  <h4>⚽ Next Match</h4>
+                  <p>
+                    <i class="bi bi-calendar-day"></i>
+                    <span>13 Sept, 2025.</span>
+                  </p>
+                </div>
+              </div>
+              <div class="upcoming">
+                <div class="team-info home-team">
+                  <img src="./assets/images/logo.png" alt="#Home-badge">
+                  <p>Tapoh Fc</p>
+                </div>
+                <div class="versus">
+                  <p>Vs</p>
+                </div>
+                <div class="team-info away-team">
+                  <img src="./assets/images/logo.png" alt="#Away-badge">
+                  <p>Young Stars Fc</p>
+                </div>
+              </div>
+              <div class="date-info">
+                <div class="due-info">
+                  <p>
+                    <i class="bi bi-geo-alt"></i>
+                    <span>Kapir Primary School</span>
+                  </p>
+                  <p>
+                    <i class="bi bi-watch"></i>
+                    <span>16:10 GMT</span>
+                  </p>
+                  <p>
+                    <i class="bi bi-cash-coin"></i>
+                    <span>Free</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-----PREVIOUS GAME----->
+
+            <div class="swiper-slide">
+              <div class="due">
+                <div class="due-info">
+                  <h4>⚽ Previous Match</h4>
+                  <p>
+                    <i class="bi bi-hourglass-split"></i>
+                    <span>90' +5</span>
+                  </p>
+                </div>
+              </div>
+              <div class="upcoming">
+                <div class="team-score home-team">
+                  <div class="score">
+                    <img src="./assets/images/logo.png" alt="#Home-badge">
+                    <p>2</p>
+                  </div>
+                  <p>Tapoh Fc</p>
+                </div>
+                <div class="versus">
+                  <p>:</p>
+                </div>
+                <div class="team-score away-team">
+                  <div class="score">
+                    <img src="./assets/images/logo.png" alt="#Away-badge">
+                    <p>0</p>
+                  </div>
+                  <p>Young Stars Fc</p>
+                </div>
+              </div>
+              <div class="date-info">
+                <div class="due-info">
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STORE PRODUCTS -->
+    <section class="store-container">
+      <h2>Official Merchandise</h2>
+      <div class="product">
+
+        <div class="store-card">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="./assets/jersey/home-no.png" alt="Home Jersey">
+              </div>
+              <div class="flip-card-back">
+                <div class="flip-top">
+                  <h3>Home-Kit Jersey</h3>
+                  <p>UGX 35,000</p>
+                </div>
+                <div class="flip-btm">
+                  <p>
+                    <strong>Note: </strong>
+                    <span>
+                      All jerseys are available at our offices. All payments are to
+                      be made to the team A/c no. <strong>3100118781</strong> - 
+                      Centenary Bank (Soroti Branch) and proof presented to the 
+                      offices or people responsible. 
+                    </span>
+                  </p>
+                </div>
+                <small>Thank You for supporting Tapoh Fc.</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="store-card">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="./assets/jersey/away-no.png" alt="Away Jersey">
+              </div>
+              <div class="flip-card-back">
+                <div class="flip-top">
+                  <h3>Away-Kit Jersey</h3>
+                  <p>UGX 35,000</p>
+                </div>
+                <div class="flip-btm">
+                  <p>
+                    <strong>Note: </strong>
+                    <span>
+                      All jerseys are available at our offices. All payments are to
+                      be made to the team A/c no. <strong>3100118781</strong> - 
+                      Centenary Bank (Soroti Branch) and proof presented to the 
+                      offices or people responsible. 
+                    </span>
+                  </p>
+                </div>
+                <small>Thank You for supporting Tapoh Fc.</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+  </main>
+
+  <!-- FOOTER -->
+  <!-- Footer ----->
+        <div class="footer">
+            <div class="footer-column">
+                <h3>Legal Information</h3>
+                <div class="legal">
+                    <p><a href="">Privacy Policy</a></p>
+                    <p><a href="">Terms of Service</a></p>
+                    <p><a href="">Disclaimer</a></p>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <div class="links">
+                    <div class="left">
+                        <p><a href="./index.html">Home</a></p>
+                        <p><a href="./about.html">About Us</a></p>
+                        <p><a href="./team.html">Team</a></p>
+                    </div>
+                    <div class="ryt">
+                        <p><a href="./gallery.html">Gallery</a></p>
+                        <p><a href="./fan.html">Team Reviews</a></p>
+                        <p><a href="./contact.html">Contact Us</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <div class="footer-social">
+                    <a href="#" class="facebook" title="FaceBook"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="twitter" title="X"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#" class="instagram" title="Instgram"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="youtube" title="YouTube"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+  </div>
+  
+  <footer>
+    <p>&copy; <span id="year"></span> Tapoh Football Club. All rights reserved.</p>
+    <p>Developed by 
+      <a href="https://xcode-avitech.github.io/AviTech-Services/" target="_blank" rel="noopener noreferrer">
+        X~Code - AviTech Services
+      </a>
+    </p>
+
+  </footer>
+  
+  <script src="./js/quotes.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="./js/youtube.js"></script>
+  <script>
+document.addEventListener("DOMContentLoaded", function () {
+    const preloader = document.getElementById("preloader");
+
+    // Check if preloader has already been shown in this tab session
+    if (!sessionStorage.getItem("preloaderShown")) {
+        // Mark as shown for this session
+        sessionStorage.setItem("preloaderShown", "true");
+
+        preloader.style.display = "flex";
+
+        window.addEventListener("load", function () {
+            setTimeout(() => {
+                preloader.classList.add("hidden");
+
+                setTimeout(() => {
+                    preloader.style.display = "none";
+                }, 500);
+            }, 4000); // adjust delay
+        });
+    } else {
+        // If already shown, hide it immediately
+        preloader.style.display = "none";
+    }
+});
+</script>
+
+  <script>
+   const homeSwipers = document.querySelectorAll('.slide-swiper');
+
+    homeSwipers.forEach(swiperContainer => {
+
+      const swiper = new Swiper(swiperContainer, {
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+      });
+    });
+  </script>
+</body>
+</html>
