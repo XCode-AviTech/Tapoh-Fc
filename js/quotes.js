@@ -21,7 +21,7 @@ function pickRandomQuotes(quotes, count, seed) {
 
 async function loadDailyQuoteSlides() {
   try {
-    const response = await fetch('../json/football_quotes.json');
+    const response = await fetch('https://xcode-avitech.github.io/Tapoh-Fc/json/football_quotes.json');
     const quotes = await response.json();
 
     const now = new Date();
@@ -79,3 +79,4 @@ async function loadDailyQuoteSlides() {
 
 // Start everything
 document.addEventListener("DOMContentLoaded", loadDailyQuoteSlides);
+
