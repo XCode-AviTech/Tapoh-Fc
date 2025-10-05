@@ -1,0 +1,336 @@
+*{
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e9ecef;
+    overflow-x: hidden;
+}
+
+.content{
+    padding: 10px;
+}
+
+.banner{
+    background: white;
+    align-items: center;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+    color: orangered;
+}
+
+.banner h2{
+    font-size: 20px;
+    color: orangered;
+}
+
+.banner i{
+    font-size: 20px;
+    padding: 0;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background: white;
+    box-shadow: 3px 4px 5px grey;
+    color: orangered;
+    transition: all 0.3s ease-in-out;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar img {
+    display: block;
+    margin: 0 auto 10px;
+    width: 80px;
+    height: 80px;
+}
+
+.sidebar h4 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.sidebar p{
+    padding: 0;
+    text-align: center;
+}
+
+.sidebar .nav-link {
+    color: orangered;
+    font-size: 1rem;
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+    background-color: rgb(243, 97, 44);
+    color: #fff;
+}
+
+/* Content Area */
+.content {
+    margin-left: 250px;
+    transition: margin-left 0.3s;
+    padding: 20px;
+}
+
+/* Cards */
+.card {
+    border-radius: 10px;
+}
+
+.icon-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.icon-circle i{
+    font-size: 34px;
+}
+
+.info h6{
+    font-size: 20px;
+    font-weight: bold;
+    color: orangered;
+}
+
+.info h4{
+    color: orangered;
+}
+
+.bg-orange {
+    background-color: rgb(226, 81, 28);
+}
+
+
+/* Player Management */
+
+.btn-outline-secondary{
+    border-color: orangered;
+    color: orangered;
+}
+
+.btn-outline-secondary:hover{
+    background: orangered;
+    color: white;
+    border: none;
+}
+
+.table thead tr th{
+    font-size: 18px;
+    color: orangered;
+}
+
+.table tbody tr td{
+    color: orangered;
+}
+
+.table img{
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+}
+
+.table{
+    cursor: pointer;
+}
+
+*::-webkit-scrollbar{
+    scroll-behavior: smooth;
+    width: 8px;
+}
+
+*::-webkit-scrollbar-track{
+    background: rgba(255, 68, 0, 0.5);
+    border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb{
+   background: rgba(255, 68, 0, 0.904);
+   border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb:hover{
+   background: rgb(255, 68, 0);
+}
+
+*{
+    scrollbar-width: thin;
+    scrollbar-color: orangered rgba(255, 68, 0, 0.644);
+}
+
+/* Fix games */
+
+.poster{
+    width: 150px; 
+    height: 180px; 
+    border: 1px solid; 
+    border-radius: 5px; 
+    padding: 5px; 
+    overflow: hidden;
+    color: orangered;
+
+    img{
+        border-radius: 5px;
+    }
+}
+
+.next{
+    color: orangered;
+}
+
+.game{
+    margin: auto; 
+    width:fit-content; 
+    justify-content: space-around;
+    padding: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: orangered;
+}
+
+.edit{
+    display: flex;
+    align-items: center;
+
+    button{
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+/*password */
+
+.img{
+    margin-left: auto;
+    margin-right: auto;
+}
+.img img{
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* pagination */
+
+.pagination .page-item .page-link {
+    color: orangered;
+    background-color: #f8f9fa;
+    border: 1px solid orangered;
+}
+.pagination .page-item.active .page-link {
+    background-color: orangered;
+    color: #fff;
+    border-color: orangered;
+}
+
+.table-responsive{
+    height: 75vh;
+}
+
+/* form control */
+
+.form-label{
+    font-weight: bold;
+}
+
+/* Device Information */
+#deviceOverlay .alert {
+    animation: slideDown 0.5s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-30%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+/* Media queries */
+
+/* Tablets and Phones (max-width: 768px) */
+@media (max-width: 768px) {
+    /* Sidebar - icons only */
+    .sidebar {
+        width: 80px;
+        padding: 15px 5px;
+    }
+
+    .sidebar h4,
+    .sidebar p,
+    .sidebar .nav-link span {
+        display: none; /* Hide text labels */
+    }
+
+    .sidebar img {
+        width: 50px;
+        height: 70px;
+    }
+
+    .content {
+        margin-left: 80px; /* Adjust content margin */
+        padding: 15px;
+    }
+
+    /* Cards - stack vertically */
+    .card {
+        margin-bottom: 15px;
+    }
+}
+
+/* Phones (max-width: 576px) */
+@media (max-width: 576px) {
+    /* Sidebar collapses to top icons (optional) */
+    .sidebar img{
+        width: 30px;
+        height: 40px;
+    }
+
+    .nav-item i{
+        font-size: 20px;
+    }
+
+    .toggle-btn{
+        display: none;
+    }
+
+    .banner{
+        font-size: 18px;
+    }
+}
+
+/* Table overflow */
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}

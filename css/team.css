@@ -1,0 +1,229 @@
+.team-container{
+    width: 100vw;
+    height: fit-content;
+    overflow: hidden;
+    background: #fcf0f0;
+    padding-bottom: 30px;
+
+    h4.team-header{
+        font-weight: bold;
+        padding: 10px;
+        color: #c70000;
+        text-align: center;
+        font-size: 2rem;
+        margin-top: 20px;
+    }
+}
+
+.team-members {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* responsive grid */
+  gap: 25px;
+  width: 100%;
+  padding: 30px;
+  background: #e7e6e6;
+  margin: 20px 0 40px 0;
+}
+
+.team-member {
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px grey;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  background: #fff;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Jersey number */
+.team-member i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #c70000;
+  color: white;
+  padding: 5px 10px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-weight: bold;
+  z-index: 2;
+}
+
+/* Player image */
+.team-member img {
+  width: 100%;
+  height: 250px;
+  object-fit: fill;
+  display: block;
+}
+
+/* Player info */
+.member-info {
+  background: #c70000;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.member-info h4 {
+  font-size: 1.2rem;
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+.member-info p {
+  font-style: italic;
+  font-weight: bold;
+  margin: 0;
+}
+
+.other{
+    padding: 20px;
+    width: 100%;
+    height: fit-content;
+}
+
+h4.coach-header{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #c70000;
+    font-size: 1.4rem;
+}
+
+.coaches{
+    width: 520px;  
+    height: 150px; 
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: grid;
+    grid-auto-flow: column;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.team-coach{
+    width: 280px;
+    height: 88%;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px;
+    box-shadow: 1px 1px 4px gray;
+    background: #c70000;
+    transition: 0.3s ease-in-out;
+    
+    img{
+        width: 100px;
+        height: 100%;
+    }
+}
+
+.coach-info{
+    height: fit-content;
+    width: 200px;
+    padding: 5px;
+    margin: auto;
+    color: white;
+
+    h4{
+        font-size: 1.4rem;
+        padding: 0;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    p{
+        text-align: center;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 1rem;
+        margin-top: auto;
+        margin-bottom: 10px;
+    }
+}
+
+.new-card h4{
+    box-shadow: 1px 1px 3px grey;
+    width: fit-content;
+    height: fit-content;
+    font-size: 1.4rem;
+    border: 0.5px solid #c70000;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+.new-card strong{
+    width: fit-content;
+    background: #c70000;
+    color: white;
+    padding: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 1px;
+}
+
+.new-card span{
+    color: #c70000;
+    padding: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+.player-news{
+    padding: 20px;
+    height: 300px;
+    width: 96%;
+    display:grid;
+    grid-auto-flow: column;
+    gap: 15px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    background: #e7e6e6;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+}
+
+.player-item{
+    height: 100%;
+    width: 220px;
+    padding: 5px;
+    background: #f1e8e8;
+    transition: 0.3s ease-in-out;
+
+    img{
+        width: 100%;
+        height: 60%;
+        border-radius: 5px;
+    }
+
+    .news-content{
+        margin-top: 5px;
+        text-align: center;
+        height: 30%;
+        align-items: center;
+
+        h2{
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #c70000;
+        }
+
+        p{
+            line-height: 15px;
+        }
+    }
+}
